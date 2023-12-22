@@ -1,0 +1,102 @@
+.cat-main {
+    width: 95%;
+    margin: auto;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.625rem;
+    }
+}
+
+.mess {
+    width: 95%;
+    margin: auto;
+    border-radius: 0.3125rem;
+    background: #C1E5FF;
+
+    h1 {
+        color: #022A4E;
+        text-align: center;
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.125rem;
+    }
+
+    p {
+        color: #022A4E;
+        font-size: 1.1vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.125rem;
+    }
+
+    @media (max-width:768px) {
+        p {
+            color: #022A4E;
+            font-size: 3.1vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 5vw;
+            text-align: center;
+        }
+    }
+}
+
+.item-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 3rem 0;
+
+    .item-wrap {
+        width: 85%;
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .item {
+            flex: 1 1 15rem;
+            height: auto;
+            border-radius: 0.3125rem;
+            background: #022A4E;
+            // display: none;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 0.3125rem 0.3125rem 0rem 0rem;
+                // border: 1px solid #022A4E;
+                box-shadow: 0px 4px 9.4px 0px rgba(2, 42, 78, 0.28);
+            }
+
+            .id {
+                h1 {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 500;
+                }
+
+                p {
+                    color: rgba(255, 255, 255, 0.55);
+                    text-align: center;
+                    font-size: .7rem;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        @media (max-width:768px) {
+            .item{
+                height: auto;
+            }
+        }
+    }
+}
